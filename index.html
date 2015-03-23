@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<title></title>
+</head>
+<body style="margin-left: 8%; margin-right: 8%;">
+<div class="row">
+<div class="col-lg-4" style="font-size: 60px; margin-right: 20px;"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>TechShop</div>
+<div class="col-lg-4" style="margin-top: 30px; float: right;">
+    <div class="input-group text-right">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+    </div>
+</div>
+</div>
+<div role="tabpanel">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#laptop" id="laptop-tab" role="tab" data-toggle="tab" aria-controls="laptop" aria-expanded="true">Laptop</a></li>
+      <li role="presentation"><a href="#mobile_phone" id="mobile_phone-tab" role="tab" data-toggle="tab" aria-controls="mobile_phone" aria-expanded="true">Mobile Phone</a></li>
+      <li role="presentation"><a href="#camera" id="camera-tab" role="tab" data-toggle="tab" aria-controls="camera" aria-expanded="true">Camera</a></li>
+      <li role="presentation"><a href="#tablet" id="tablet-tab" role="tab" data-toggle="tab" aria-controls="tablet" aria-expanded="true">Tablet</a></li>
+      <li role="presentation"><a href="#keyboard" id="keyboard-tab" role="tab" data-toggle="tab" aria-controls="keyboard" aria-expanded="true">Keyboard</a></li>
+      <li role="presentation"><a href="#mouse" role="tab" id="mouse-tab" data-toggle="tab" aria-controls="mouse">Mouse</a></li>
+      <li role="presentation" class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Accessories<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+          <li><a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">Storage</a></li>
+          <li><a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">Disc</a></li>
+          <li><a href="#dropdown3" tabindex="-1" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown3">Drive</a></li>
+          <li><a href="#dropdown4" tabindex="-1" role="tab" id="dropdown4-tab" data-toggle="tab" aria-controls="dropdown4">Cable</a></li>
+          <li><a href="#dropdown5" tabindex="-1" role="tab" id="dropdown5-tab" data-toggle="tab" aria-controls="dropdown5">Connector</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active text-center" id="laptop" aria-labelledBy="laptop-tab">
+        <span class="glyphicon glyphicon-blackboard text-center" aria-hidden="true" style="font-size: 200px;"></span>
+        <h2>Super Computer</h2>
+        <form method="post" action="process.php">
+          <input type="hidden"  name="itemName" value="laptop" />
+          <input type="hidden"  name="itemId" value="1" />
+          <input type="hidden"  name="itemUnitPrice" value="9999.99" />
+          <input type="hidden"  name="itemDescription" value="Good laptop ever." />
+          Qty:<select name="itemQty"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+          <input class="btn btn-primary" type="submit" value="Place Order">
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="mobile_phone" aria-labelledBy="mobile_phone-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="camera" aria-labelledBy="camera-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="tablet" aria-labelledBy="tablet-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="keyboard" aria-labelledBy="keyboard-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="mouse" aria-labelledBy="mouse-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledBy="dropdown1-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledBy="dropdown2-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown3" aria-labelledBy="dropdown3-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown4" aria-labelledBy="dropdown4-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="dropdown5" aria-labelledBy="dropdown5-tab">
+        <h1 class="text-center">No item yet!</h1>
+      </div>
+    </div>
+  </div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="bootstrap-3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
