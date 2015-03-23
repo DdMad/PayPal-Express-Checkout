@@ -107,7 +107,7 @@
 		$httpResponseParsedDetails = postRequest('DoExpressCheckoutPayment', $urlString, PAYPAL_MODE);
 
 		if (strtoupper($httpResponseParsedDetails["ACK"]) == "SUCCESS" || strtoupper($httpResponseParsedDetails["ACK"]) == "SUCCESSWITHWARNING") {
-			echo '<h2 class="text-center">Success</h2>';
+			echo '<h2 class="text-center">The Transaction Is Successful!</h2>';
 		} else {
 			echo '<h2 class="text-center">Error</h2>';
 		}
