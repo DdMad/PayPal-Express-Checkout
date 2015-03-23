@@ -107,10 +107,22 @@
 		$httpResponseParsedDetails = postRequest('DoExpressCheckoutPayment', $urlString, PAYPAL_MODE);
 
 		if (strtoupper($httpResponseParsedDetails["ACK"]) == "SUCCESS" || strtoupper($httpResponseParsedDetails["ACK"]) == "SUCCESSWITHWARNING") {
-			echo "<h2>Success</h2>";
+			echo '<h2 class="text-center">Success</h2>';
 		} else {
-			echo "<h2>Error</h2>";
+			echo '<h2 class="text-center">Error</h2>';
 		}
 	}
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="refresh" content="3;url=http://128.199.201.77/paypalex/" />
+	<meta charset="utf-8">
+	<link href="bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<title>TechShop</title>
+</head>
+<body>	
+</body>
+</html>
